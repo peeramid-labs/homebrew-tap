@@ -1,33 +1,33 @@
 class Slop < Formula
   desc "Blazing-fast AI-slop firewall — scan + auto-clean git patches"
-  homepage "https://github.com/peeramid-labs/slop-cli"
-  version "0.4.0"
+  homepage "https://github.com/peeramid-labs/sloppoke"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/peeramid-labs/slop-cli/releases/download/v#{version}/slop-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "7adb5b7328e28250e53c63aa9f505dccbd2acc5110c290eed1a83a56042d082a"
+      url "https://github.com/peeramid-labs/sloppoke/releases/download/v#{version}/slop-v#{version}-aarch64-apple-darwin.tar.gz"
+      sha256 "d34c58e6822ea126887b268371cf45d0952977bbc4baf12078ff72090ccb60d9"
     end
     on_intel do
-      url "https://github.com/peeramid-labs/slop-cli/releases/download/v#{version}/slop-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "d75218d119298012f06487b958f0c5c40a62f9cd96047003c08286824c35924a"
+      url "https://github.com/peeramid-labs/sloppoke/releases/download/v#{version}/slop-v#{version}-x86_64-apple-darwin.tar.gz"
+      sha256 "d99226b5c1ba26c63c942cbd776a65729a48b92d9e9e58a92c8576561023c4d7"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/peeramid-labs/slop-cli/releases/download/v#{version}/slop-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ef5d1ee1a6a48c505148fcd738e93cbe5b57100360264dfac73fd73cf364241a"
+      url "https://github.com/peeramid-labs/sloppoke/releases/download/v#{version}/slop-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a76d086759174ff333ce32ae161dd1b1c16549ed8e76da7c52d9b502bf2674d0"
     end
     on_intel do
-      url "https://github.com/peeramid-labs/slop-cli/releases/download/v#{version}/slop-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5aabf7bb78cb1bdfe340affc1381a56c7769b4bccd080ac15b1424c93c99568c"
+      url "https://github.com/peeramid-labs/sloppoke/releases/download/v#{version}/slop-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "948c042a0e9844f4f113137c220296f368c95c7f68c00e86813420abe11cb172"
     end
   end
 
   head do
-    url "https://github.com/peeramid-labs/slop-cli.git", branch: "main"
+    url "https://github.com/peeramid-labs/sloppoke.git", branch: "main"
     depends_on "rust" => :build
   end
 
