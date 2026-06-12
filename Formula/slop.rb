@@ -1,28 +1,28 @@
 class Slop < Formula
   desc "Blazing-fast AI-slop firewall — scan + auto-clean git patches"
   homepage "https://github.com/peeramid-labs/sloppoke"
-  version "0.7.0"
+  version "0.8.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/peeramid-labs/sloppoke/releases/download/v#{version}/slop-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "cd5353e4edf789cd08d963d1305ab47502c1ddf7fccb582f546f5e363c996b4c"
+      sha256 "0abff109dd9fc6feeb8031911f996912cb08bbd49e92c861e4c37a103bdcfa53"
     end
     on_intel do
       url "https://github.com/peeramid-labs/sloppoke/releases/download/v#{version}/slop-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "cca13ec2f378734dd3003c6c5b1152b3294560e949eb61642a3117f3f4611308"
+      sha256 "0e01e31530d13f8f3889c3e260a4dd2749fa1bd7a366b69d6ca697050e13f836"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/peeramid-labs/sloppoke/releases/download/v#{version}/slop-v#{version}-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a8edc90b4ebd591101fb15624a7c46affccfe31d62a1af1ab2872590cdba5b26"
+      sha256 "48288522bba1c7edf497ffcd106e2ab09fcc2e20884261368b0f123f9882910a"
     end
     on_intel do
       url "https://github.com/peeramid-labs/sloppoke/releases/download/v#{version}/slop-v#{version}-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c8eebeddf35f3df05c084cf358841fc540069b260a2a5cb945cdea205fc0cb5d"
+      sha256 "818450203f361df178da8ed34e337b17ad7f65374eb7a6e22a52b8763715e452"
     end
   end
 
